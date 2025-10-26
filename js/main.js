@@ -1,4 +1,4 @@
-// main.js
+
 document.addEventListener('DOMContentLoaded', function () {
 
   // Navbar scroll effect
@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
   checkScroll();
   window.addEventListener('scroll', checkScroll);
 
-  // Language toggle: يبدل بين العربية والانجليزية
+  //  يبدل بين العربية والانجليزية
   const flags = document.querySelectorAll('.flag-btn');
   const root = document.documentElement;
-  // key texts to translate (add more as required)
+
   const translations = {
     'ar': {
       'title': 'بوابة فعالية دمشق',
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'btn': 'دمشق تحتاجك',
       'home': 'الرئيسية',
       'events': 'الفعاليات', 
-      'about': 'عن الدليل', // ✅ نص مباشر بدلاً من كائن
+      'about': 'عن الدليل', 
       'contact': 'اتصل بنا',
       'featured': 'أبرز الفعاليات',
       'discover': 'اكتشف الفعالية',
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     desc: 'تنظيف وتجميل أحياء دمشق القديمة بمشاركة الأهالي.'
   },
 },
-    // ✅ قسم حدث اليوم داخل "ar"
+   
     'today': {
       'title': 'حدث اليوم',
       'badge': 'حدث اليوم',
@@ -102,51 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'rural': 'ريف دمشق',
       'details': 'تفاصيل'
     },
-    // ========== بيانات أحدث الفعاليات ==========
-
-// 'latestEventsData': {
-//   'bazaar': {
-//     title: 'بازار دمشق للأمل',
-//     desc: 'معرض خيري لمنتجات حرفية وبيتية لدعم العائلات المتضررة.'
-//   },
-//   'trees': {
-//     title: 'إعادة تشجير الغوطة',
-//     desc: 'يوم تطوعي لزراعة الأشجار في المناطق المتضررة.'
-//   },
-//   'clean': {
-//     title: 'مبادرة شارع نظيف',
-//     desc: 'تنظيف وتجميل أحياء دمشق القديمة بمشاركة الأهالي.'
-//   },
-//   'schools': {
-//     title: 'يوم تطوعي لترميم المدارس',
-//     desc: 'طلاب الجامعات يشاركون بإصلاح المقاعد والدهان في مدارس دمشق.'
-//   },
-//   'ramadan': {
-//     title: 'سوق رمضان الخيري',
-//     desc: 'بازار في باب توما لدعم الأسر قبيل العيد.'
-//   },
-//   'photos': {
-//     title: 'معرض صور دمشق تنهض',
-//     desc: 'صور فوتوغرافية قبل وبعد التحرير تُعرض في ساحة عامة.'
-//   },
-//   'books': {
-//     title: 'حملة كتاب لكل بيت',
-//     desc: 'توزيع كتب مستعملة وجديدة لدعم الثقافة في المجتمع.'
-//   },
-//   'universities': {
-//     title: 'اليوم المفتوح للجامعات',
-//     desc: 'استقبال الأهالي والطلاب الجدد لتعريفهم بفرص التعليم.'
-//   },
-//   'food': {
-//     title: 'مهرجان الطعام الدمشقي',
-//     desc: 'تذوق أكلات شعبية تقليدية مع عروض فلكلورية.'
-//   },
-//   'kids': {
-//     title: 'مهرجان الأطفال للسلام',
-//     desc: 'نشاط ترفيهي وتعليمي للأطفال مع ألعاب ومسابقات رسم.'
-//   }
-// },
-
+  
 'latestEventsData': {
   'bazaar': {
     title: 'بازار دمشق للأمل',
@@ -336,9 +292,6 @@ aboutPage: {
 },
 
 
-
-
-
     },
     'en': {
       'title': 'Damascus Event Gateway',
@@ -346,7 +299,7 @@ aboutPage: {
       'btn': 'Damascus NEEDS YOU!',
       'home': 'Home', 
       'events': 'Events',
-      'about': 'About',  // ✅ يجب أن يكون نصاً، ليس كائناً
+      'about': 'About', 
       'contact': 'Contact',
         'featured': 'Featured Events',
         'discover': 'Discover Event',
@@ -422,49 +375,6 @@ aboutPage: {
       'rural': 'Rural Damascus',
       'details': 'Details'
     },
-
-//     'latestEventsData': {
-//   'bazaar': {
-//     title: 'Damascus Bazaar of Hope',
-//     desc: 'A charity exhibition of handmade and home products supporting affected families.'
-//   },
-//   'trees': {
-//     title: 'Reforesting Al-Ghouta',
-//     desc: 'A volunteering day for planting trees in affected areas.'
-//   },
-//   'clean': {
-//     title: 'Clean Street Initiative',
-//     desc: 'Cleaning and beautifying the old neighborhoods of Damascus with the participation of the residents'
-//   },
-//   'schools': {
-//     title: 'School Renovation Day',
-//     desc: 'University students help repair desks and paint schools across Damascus.'
-//   },
-//   'ramadan': {
-//     title: 'Ramadan Charity Market',
-//     desc: 'A bazaar in Bab Touma supporting families before Eid.'
-//   },
-//   'photos': {
-//     title: 'Damascus Rising Photo Exhibition',
-//     desc: 'Photographs showing Damascus before and after liberation, displayed publicly.'
-//   },
-//   'books': {
-//     title: 'Book for Every Home Campaign',
-//     desc: 'Distributing new and used books to promote cultural awareness.'
-//   },
-//   'universities': {
-//     title: 'Universities Open Day',
-//     desc: 'Welcoming families and new students to explore education opportunities.'
-//   },
-//   'food': {
-//     title: 'Damascus Food Festival',
-//     desc: 'Taste traditional Syrian dishes with live folkloric performances.'
-//   },
-//   'kids': {
-//     title: 'Children\'s Peace Festival',
-//     desc: 'Fun and educational activities for kids with games and drawing contests.'
-//   }
-// },
 'latestEventsData': {
   'bazaar': {
     title: 'Damascus Bazaar of Hope',
@@ -688,7 +598,6 @@ Our vision is to create a connected society where everyone contributes to rebuil
       navLinks[0].textContent = translations[lang].home;
       navLinks[1].textContent = translations[lang].events;
      navLinks[2].textContent = lang === 'ar' ? 'عن الدليل' : 'About'; 
-      // navLinks[3].textContent = translations[lang].contact;
       navLinks[3].textContent = lang === 'ar' ? 'اتصل بنا' : 'Contact Us'; 
     }
 
@@ -864,19 +773,17 @@ contactInfoItems.forEach((item, index) => {
             switch (index) {
                 case 0: // البريد الإلكتروني
                     heading.textContent = translations[lang].contact.emailInfo;
-                    // لا نغير النص هنا لأنه ثابت (info@deg.com)
                     break;
                 case 1: // رقم الهاتف
                     heading.textContent = translations[lang].contact.phoneInfo;
-                    // لا نغير النص هنا لأنه ثابت (+963 11 123 4567)
                     break;
                 case 2: // العنوان
                     heading.textContent = translations[lang].contact.addressInfo;
-                    paragraph.textContent = translations[lang].contact.address; // ✅ هذا السطر الجديد
+                    paragraph.textContent = translations[lang].contact.address;
                     break;
                 case 3: // ساعات العمل
                     heading.textContent = translations[lang].contact.hoursInfo;
-                    paragraph.textContent = translations[lang].contact.workHours; // ✅ هذا السطر الجديد
+                    paragraph.textContent = translations[lang].contact.workHours;
                     break;
             }
         }
@@ -893,56 +800,8 @@ if (invalidFeedbacks.length >= 3) {
 
 });
 
-// // ===== ترجمة صفحة الفعاليات (events.html) =====
-// const eventsPageTitle = document.querySelector('.events-page__title');
-// const eventsSearchInput = document.getElementById('eventsSearchInput');
-// const eventsFilterType = document.getElementById('eventsFilterType');
-// const eventsFilterDate = document.getElementById('eventsFilterDate');
-// const eventsFilterLocation = document.getElementById('eventsFilterLocation');
-// const noEventsResults = document.getElementById('noEventsResults');
-// const detailsButtons = document.querySelectorAll('.events-page__btn-details');
-// const quickViewButtons = document.querySelectorAll('.events-page__btn-quickview');
 
-// if (eventsPageTitle) eventsPageTitle.textContent = translations[lang].eventsPage.title;
-// if (eventsSearchInput) eventsSearchInput.placeholder = translations[lang].eventsPage.searchPlaceholder;
-
-// // ترجمة خيارات التصفية (النوع)
-// if (eventsFilterType) {
-//   eventsFilterType.options[0].text = translations[lang].eventsPage.filterAllTypes;
-//   eventsFilterType.options[1].text = translations[lang].eventsPage.filterCharity;
-//   eventsFilterType.options[2].text = translations[lang].eventsPage.filterVolunteer;
-//   eventsFilterType.options[3].text = translations[lang].eventsPage.filterCultural;
-//   eventsFilterType.options[4].text = translations[lang].eventsPage.filterEnvironmental;
-// }
-
-// // ترجمة خيارات التصفية (التاريخ)
-// if (eventsFilterDate) {
-//   eventsFilterDate.options[0].text = translations[lang].eventsPage.filterAllDates;
-//   // التواريخ المحددة يمكن تركها كما هي أو إضافتها للترجمة لاحقاً
-// }
-
-// // ترجمة خيارات التصفية (المكان)
-// if (eventsFilterLocation) {
-//   eventsFilterLocation.options[0].text = translations[lang].eventsPage.filterAllLocations;
-//   // الأماكن المحددة يمكن تركها كما هي أو إضافتها للترجمة لاحقاً
-// }
-
-// if (noEventsResults) {
-//   const p = noEventsResults.querySelector('p');
-//   if (p) p.textContent = translations[lang].eventsPage.noResults;
-// }
-
-// // ترجمة أزرار التفاصيل
-// detailsButtons.forEach(btn => {
-//   btn.textContent = translations[lang].eventsPage.details;
-// });
-
-// // ترجمة أزرار العرض السريع
-// quickViewButtons.forEach(btn => {
-//   btn.textContent = translations[lang].eventsPage.quickView;
-// });
-
-// ===== ترجمة صفحة الفعاليات (events.html) =====
+// ===== ترجمة صفحة الفعاليات (events) =====
 const eventsPageTitle = document.querySelector('.events-page__title');
 const eventsSearchInput = document.getElementById('eventsSearchInput');
 const eventsFilterType = document.getElementById('eventsFilterType');
@@ -997,7 +856,7 @@ quickViewButtons.forEach(btn => {
   btn.textContent = translations[lang].eventsPage.quickView;
 });
 
-// ===== ترجمة كروت الفعاليات في صفحة events.html =====
+// ===== ترجمة كروت الفعاليات في صفحة events =====
 const eventsPageCards = document.querySelectorAll('.events-page__card');
 eventsPageCards.forEach(card => {
   const key = card.dataset.event;
@@ -1007,7 +866,7 @@ eventsPageCards.forEach(card => {
   const locationEl = card.querySelector('.events-page__card-location');
   const badgeEl = card.querySelector('.events-page__card-badge');
 
-  // استخدام بيانات latestEventsData الموجودة
+
   const eventData = translations[lang].latestEventsData[key];
   
   if (eventData) {
@@ -1037,14 +896,14 @@ eventsPageCards.forEach(card => {
   }
 });
 
-// ===== ترجمة الفوتر في صفحة events.html =====
+// ===== ترجمة الفوتر في صفحة events =====
 const eventsFooter = document.querySelector('.site-footer p');
 if (eventsFooter) {
   eventsFooter.textContent = translations[lang].footer.copyright;
 }
 
 
-// ===== ترجمة صفحة تفاصيل الفعالية (event.html) =====
+// ===== ترجمة صفحة تفاصيل الفعالية (event) =====
 const eventPageTitle = document.querySelector('.event-details__title');
 const descriptionTitle = document.querySelector('.event-details__section-title:nth-of-type(1)');
 const goalsTitle = document.querySelector('.event-details__section-title:nth-of-type(2)');
@@ -1103,7 +962,7 @@ if (eventLocationText && eventLocationText.textContent.includes('جاري تحم
   eventLocationText.textContent = translations[lang].eventPage.loadingLocation;
 }
 
-// ===== ترجمة الفوتر في صفحة event.html =====
+// ===== ترجمة الفوتر في صفحة event =====
 const eventFooter = document.querySelector('.site-footer p');
 if (eventFooter) {
   eventFooter.textContent = translations[lang].footer.copyright;
@@ -1112,7 +971,7 @@ if (eventFooter) {
 
 
 
-// ===== صفحة عن الدليل (about.html) =====
+// ===== صفحة عن الدليل (about) =====
 const aboutPageTitle = document.querySelector('.about-page__title');
 const aboutProjectTitle = document.querySelector('.about-project__title');
 const aboutProjectText = document.querySelector('.about-project__text');
@@ -1147,7 +1006,7 @@ teamCardsAbout.forEach((card, index) => {
   }
 });
 
-// خطوات "كيفية إضافة فعالية"
+
 howAddSteps.forEach((step, i) => {
   const numEl = step.querySelector('.how-to-add__step-number');
   const titleEl = step.querySelector('.how-to-add__step-title');
@@ -1160,76 +1019,8 @@ howAddSteps.forEach((step, i) => {
   }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /////////////////////////////////////////////////////////////////////
-
+////////////////////////////////////////////////////////////////////
 
     // persist selection (optional)
     try{ localStorage.setItem('deg_lang', lang); }catch(e){}
@@ -1240,16 +1031,13 @@ howAddSteps.forEach((step, i) => {
     btn.addEventListener('click', () => {
       const lang = btn.getAttribute('data-lang');
       setLanguage(lang);
-      // optional: visual indicator
       flags.forEach(f=> f.style.boxShadow = '');
       btn.style.boxShadow = '0 6px 18px rgba(0,0,0,.22)';
     });
   });
 
-  // restore previous language if موجود
   try{
     const saved = localStorage.getItem('deg_lang') || 'ar';
-    // simulate click on corresponding flag for visual consistency
     const defaultBtn = document.querySelector(`.flag-btn[data-lang="${saved}"]`);
     if(defaultBtn) defaultBtn.click();
     else setLanguage(saved);
@@ -1279,14 +1067,7 @@ modeBtn.addEventListener('click', () => {
   }
 });
 
-
-
-
-
-
-
-
-
+//////////////////////////////////////////////////////////////////
 // ===== قسم أبرز الفعاليات =====
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".event-card");
@@ -1345,84 +1126,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCards();
 });
 
-
-
-
-
-
-
-
-
-// // --- فلترة وبحث قسم أحدث الفعاليات ---
-// const searchInput = document.getElementById('searchInput');
-// const filterType = document.getElementById('filterType');
-// const filterDate = document.getElementById('filterDate');
-// const filterLocation = document.getElementById('filterLocation');
-// const latestCards = document.querySelectorAll('.latest-card');
-
-// function filterEvents() {
-//   const searchText = searchInput.value.toLowerCase().trim();
-//   const selectedType = filterType.value;
-//   const selectedDate = filterDate.value;
-//   const selectedLocation = filterLocation.value;
-
-//   latestCards.forEach(card => {
-//     const title = card.querySelector('h3').textContent.toLowerCase();
-//     const type = card.dataset.type;
-//     const date = card.dataset.date;
-//     const location = card.dataset.location;
-
-//     const matchSearch = title.includes(searchText);
-//     const matchType = (selectedType === 'all' || selectedType === type);
-//     const matchDate = (selectedDate === 'all' || selectedDate === date);
-//     const matchLocation = (selectedLocation === 'all' || selectedLocation === location);
-
-//     const isVisible = matchSearch && matchType && matchDate && matchLocation;
-
-//     // تأثير بسيط للظهور والاختفاء
-//     if (isVisible) {
-//       card.style.opacity = '1';
-//       card.style.transform = 'scale(1)';
-//       card.style.pointerEvents = 'auto';
-//       card.style.display = 'block';
-//     } else {
-//       card.style.opacity = '0';
-//       card.style.transform = 'scale(0.95)';
-//       card.style.pointerEvents = 'none';
-//       setTimeout(() => {
-//         card.style.display = 'none';
-//       }, 200);
-//     }
-//   });
-// }
-
-// // ====== مراقبة تغييرات البحث والفلاتر ======
-// if (searchInput) {
-//   searchInput.addEventListener('input', filterEvents);
-// }
-// if (filterType) {
-//   filterType.addEventListener('change', filterEvents);
-// }
-// if (filterDate) {
-//   filterDate.addEventListener('change', filterEvents);
-// }
-// if (filterLocation) {
-//   filterLocation.addEventListener('change', filterEvents);
-// }
-
-// // تشغيل الفلترة عند تحميل الصفحة
-// filterEvents();
-
-
-
-
-
-
-// ///////////////////////////////////////////////////////////////////////////////
 // ///////////////////// EVENTS ////////////////////////////////////////////////////
-
-// // js/main.js
-// // 🔹 الوضع الداكن (لكل الصفحات)
 function initializeDarkMode() {
     const modeToggle = document.getElementById('mode-Toggle');
     const body = document.body;
@@ -1447,9 +1151,8 @@ function initializeDarkMode() {
     });
 }
 
-
 ///////////////////////////////////////////////////////////////////////////////
-// 🏠 فلترة وبحث قسم "أحدث الفعاليات" (فقط في index.html)
+//  فلترة وبحث قسم "أحدث الفعاليات" (فقط في index)
 function initializeLatestEventsFilter() {
   const searchInput = document.getElementById('searchInput');
   const filterType = document.getElementById('filterType');
@@ -1501,11 +1204,11 @@ function initializeLatestEventsFilter() {
   filterDate.addEventListener('change', filterEvents);
   filterLocation.addEventListener('change', filterEvents);
 
-  filterEvents(); // تشغيل أولي
+  filterEvents(); 
 }
 
 ///////////////////////////////////////////////////////////////////////////////
-// 📅 فلترة صفحة الفعاليات (فقط في events.html)
+//  فلترة صفحة الفعاليات (فقط في events)
 function initializeEventsPageFilter() {
   const searchInput = document.getElementById('eventsSearchInput');
   const eventCards = document.querySelectorAll('.events-page__card');
@@ -1551,38 +1254,16 @@ function initializeEventsPageFilter() {
   filterLocation.addEventListener('change', filterEvents);
   if (searchBtn) searchBtn.addEventListener('click', filterEvents);
 
-  filterEvents(); // تشغيل أولي
+  filterEvents(); 
 }
 
 ///////////////////////////////////////////////////////////////////////////////
-// 🚀 التهيئة العامة عند تحميل الصفحة
+
 document.addEventListener('DOMContentLoaded', function () {
   initializeDarkMode();
   initializeLatestEventsFilter();
   initializeEventsPageFilter();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ///////////////////////////////////
@@ -1606,25 +1287,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ////////////////////////////
     ///////////// الكود الخاص بقسم Contact 
     
     // دالة للحصول على النص المترجم بأمان
@@ -1647,15 +1309,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const alertContainer = document.getElementById('alertContainer');
         const submitBtn = document.getElementById('submitBtn');
 
-        // تحديث النصوص عند تحميل الصفحة
+
         updateContactTexts();
 
-        // دالة لعرض التنبيهات
+
         function showAlert(message, type) {
             const alert = document.createElement('div');
             alert.className = `alert alert-${type}`;
-            
-            // استخدام النصوص المترجمة
+
             let alertMessage = message;
             if (type === 'success') {
                 alertMessage = getTranslatedText('successMessage', 'تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.');
@@ -1667,27 +1328,27 @@ document.addEventListener('DOMContentLoaded', function () {
             alertContainer.innerHTML = '';
             alertContainer.appendChild(alert);
             
-            // إزالة التنبيه تلقائياً بعد 5 ثواني
+
             setTimeout(() => {
                 alert.remove();
             }, 5000);
         }
 
-        // دالة للتحقق من صحة البريد الإلكتروني
+
         function isValidEmail(email) {
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return emailRegex.test(email);
         }
 
-        // دالة لتحديث جميع النصوص في الصفحة
+
         function updateContactTexts() {
             const currentLang = document.documentElement.lang || 'ar';
             
-            // تحديث النصوص إذا كانت الترجمات متاحة
+
             if (window.translations && window.translations[currentLang]) {
                 const contactTexts = window.translations[currentLang].contact;
                 
-                // تحديث العناوين
+
                 const contactTitle = document.querySelector('.contact-page__title');
                 const contactFormTitle = document.querySelector('.contact-form__title');
                 const contactInfoTitle = document.querySelector('.contact-info__title');
@@ -1698,7 +1359,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (contactInfoTitle) contactInfoTitle.textContent = contactTexts.contactInfo;
                 if (socialMediaTitle) socialMediaTitle.textContent = contactTexts.followUs;
 
-                // تحديث تسميات الحقول
+
                 const nameLabel = document.querySelector('label[for="name"]');
                 const emailLabel = document.querySelector('label[for="email"]');
                 const messageLabel = document.querySelector('label[for="message"]');
@@ -1707,10 +1368,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (emailLabel) emailLabel.textContent = contactTexts.emailLabel;
                 if (messageLabel) messageLabel.textContent = contactTexts.messageLabel;
 
-                // تحديث زر الإرسال
+
                 if (submitBtn) submitBtn.textContent = contactTexts.submitBtn;
 
-                // تحديث عناصر معلومات الاتصال
+
                 const contactInfoItems = document.querySelectorAll('.contact-info__content h4');
                 if (contactInfoItems.length >= 4) {
                     contactInfoItems[0].textContent = contactTexts.emailInfo;
@@ -1719,7 +1380,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     contactInfoItems[3].textContent = contactTexts.hoursInfo;
                 }
 
-                // تحديث نصوص التحقق من الصحة
                 const invalidFeedbacks = document.querySelectorAll('.invalid-feedback');
                 if (invalidFeedbacks.length >= 3) {
                     invalidFeedbacks[0].textContent = contactTexts.invalidName;
@@ -1729,7 +1389,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // التحقق من الحقول في الوقت الحقيقي
+
         const inputs = contactForm.querySelectorAll('input, textarea');
         inputs.forEach(input => {
             input.addEventListener('input', function() {
@@ -1742,7 +1402,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-        // التحقق من البريد الإلكتروني بشكل منفصل
+
         const emailInput = document.getElementById('email');
         emailInput.addEventListener('blur', function() {
             if (this.value && !isValidEmail(this.value)) {
@@ -1751,20 +1411,20 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // معالجة إرسال النموذج
+
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // إعادة تعيين التنبيهات
+
             alertContainer.innerHTML = '';
             
-            // التحقق من صحة جميع الحقول
+
             let isValid = true;
             const name = document.getElementById('name');
             const email = document.getElementById('email');
             const message = document.getElementById('message');
 
-            // التحقق من الاسم
+
             if (!name.value.trim()) {
                 name.classList.add('is-invalid');
                 isValid = false;
@@ -1773,7 +1433,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 name.classList.add('is-valid');
             }
 
-            // التحقق من البريد الإلكتروني
+
             if (!email.value.trim() || !isValidEmail(email.value)) {
                 email.classList.add('is-invalid');
                 isValid = false;
@@ -1782,7 +1442,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 email.classList.add('is-valid');
             }
 
-            // التحقق من الرسالة
             if (!message.value.trim()) {
                 message.classList.add('is-invalid');
                 isValid = false;
@@ -1796,38 +1455,38 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            // محاكاة إرسال النموذج
+
             submitBtn.disabled = true;
             const currentLang = document.documentElement.lang || 'ar';
             const sendingText = window.translations && window.translations[currentLang] ? 
                 window.translations[currentLang].contact.sending : 'جاري الإرسال...';
             submitBtn.textContent = sendingText;
 
-            // محاكاة تأخير الشبكة
+ 
             setTimeout(() => {
-                // في التطبيق الحقيقي، هنا سيتم إرسال البيانات إلى الخادم
+
                 console.log('تم إرسال النموذج:', {
                     name: name.value,
                     email: email.value,
                     message: message.value
                 });
 
-                // عرض رسالة النجاح
+
                 showAlert('', 'success');
                 
-                // إعادة تعيين النموذج
+
                 contactForm.reset();
                 inputs.forEach(input => {
                     input.classList.remove('is-valid', 'is-invalid');
                 });
 
-                // إعادة تفعيل الزر
+
                 submitBtn.disabled = false;
-                updateContactTexts(); // إعادة تعيين نص الزر
+                updateContactTexts(); 
             }, 2000);
         });
 
-        // تأثيرات إضافية لأيقونات وسائل التواصل
+
         const socialIcons = document.querySelectorAll('.social-icon');
         socialIcons.forEach(icon => {
             icon.addEventListener('mouseenter', function() {
@@ -1839,12 +1498,12 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-        // تحديث النصوص عند تغيير اللغة
         const flagButtons = document.querySelectorAll('.flag-btn');
         flagButtons.forEach(btn => {
             btn.addEventListener('click', function() {
-                // انتظر قليلاً ثم حدث النصوص
+
                 setTimeout(updateContactTexts, 100);
             });
         });
     });
+
